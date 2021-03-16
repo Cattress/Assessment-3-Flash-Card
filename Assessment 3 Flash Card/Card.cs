@@ -13,8 +13,10 @@ namespace Assessment_3_Flash_Card
         private string cardDefinition;
         private int topCard;
 
-        public Card()
+        public Card(string cardTitle, string cardDefinition)
         {
+            this.cardTitle = cardTitle;
+            this.cardDefinition = cardDefinition;
         }
 
         public string GetDefinition()
@@ -22,6 +24,24 @@ namespace Assessment_3_Flash_Card
             return cardDefinition;
         }
 
-        public string
+        public string ReadCard()
+        {
+            if(flipped ==true )
+            {
+                return cardDefinition;
+            }
+            else
+            {
+                return cardTitle;
+            }
+        }
+
+        public bool isFlipped()
+        {
+            return flipped;
+        }
+
+
+
     }
 }
