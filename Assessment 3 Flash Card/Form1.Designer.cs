@@ -34,6 +34,8 @@ namespace Assessment_3_Flash_Card
             this.cardLabel = new System.Windows.Forms.Label();
             this.shuffleButton = new System.Windows.Forms.Button();
             this.importButton = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
+            this.previousButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // browseButton
@@ -67,9 +69,9 @@ namespace Assessment_3_Flash_Card
             // 
             // shuffleButton
             // 
-            this.shuffleButton.Location = new System.Drawing.Point(297, 361);
+            this.shuffleButton.Location = new System.Drawing.Point(297, 365);
             this.shuffleButton.Name = "shuffleButton";
-            this.shuffleButton.Size = new System.Drawing.Size(89, 40);
+            this.shuffleButton.Size = new System.Drawing.Size(107, 36);
             this.shuffleButton.TabIndex = 3;
             this.shuffleButton.Text = "shuffle";
             this.shuffleButton.UseVisualStyleBackColor = true;
@@ -84,11 +86,31 @@ namespace Assessment_3_Flash_Card
             this.importButton.UseVisualStyleBackColor = true;
             this.importButton.Click += new System.EventHandler(this.importButton_Click);
             // 
+            // nextButton
+            // 
+            this.nextButton.Location = new System.Drawing.Point(524, 365);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(100, 36);
+            this.nextButton.TabIndex = 5;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseVisualStyleBackColor = true;
+            // 
+            // previousButton
+            // 
+            this.previousButton.Location = new System.Drawing.Point(633, 365);
+            this.previousButton.Name = "previousButton";
+            this.previousButton.Size = new System.Drawing.Size(86, 36);
+            this.previousButton.TabIndex = 6;
+            this.previousButton.Text = "Previous";
+            this.previousButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 497);
+            this.Controls.Add(this.previousButton);
+            this.Controls.Add(this.nextButton);
             this.Controls.Add(this.importButton);
             this.Controls.Add(this.shuffleButton);
             this.Controls.Add(this.cardLabel);
@@ -108,6 +130,8 @@ namespace Assessment_3_Flash_Card
         private System.Windows.Forms.Label cardLabel;
         private System.Windows.Forms.Button shuffleButton;
         private System.Windows.Forms.Button importButton;
+        private System.Windows.Forms.Button nextButton;
+        private System.Windows.Forms.Button previousButton;
     }
 }
 
