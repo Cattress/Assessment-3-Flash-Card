@@ -36,6 +36,7 @@ namespace Assessment_3_Flash_Card
             this.importButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.previousButton = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // browseButton
@@ -66,6 +67,7 @@ namespace Assessment_3_Flash_Card
             this.cardLabel.Size = new System.Drawing.Size(35, 13);
             this.cardLabel.TabIndex = 2;
             this.cardLabel.Text = "label1";
+            this.cardLabel.Click += new System.EventHandler(this.cardLabel_Click);
             // 
             // shuffleButton
             // 
@@ -80,11 +82,10 @@ namespace Assessment_3_Flash_Card
             // 
             this.importButton.Location = new System.Drawing.Point(84, 12);
             this.importButton.Name = "importButton";
-            this.importButton.Size = new System.Drawing.Size(105, 46);
+            this.importButton.Size = new System.Drawing.Size(58, 36);
             this.importButton.TabIndex = 4;
             this.importButton.Text = "Import";
             this.importButton.UseVisualStyleBackColor = true;
-            this.importButton.Click += new System.EventHandler(this.importButton_Click);
             // 
             // nextButton
             // 
@@ -104,6 +105,10 @@ namespace Assessment_3_Flash_Card
             this.previousButton.Text = "Previous";
             this.previousButton.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +123,7 @@ namespace Assessment_3_Flash_Card
             this.Controls.Add(this.browseButton);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +138,7 @@ namespace Assessment_3_Flash_Card
         private System.Windows.Forms.Button importButton;
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Button previousButton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
