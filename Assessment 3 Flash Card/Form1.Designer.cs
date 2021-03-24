@@ -37,6 +37,7 @@ namespace Assessment_3_Flash_Card
             this.nextButton = new System.Windows.Forms.Button();
             this.previousButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.FilenameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // browseButton
@@ -109,11 +110,21 @@ namespace Assessment_3_Flash_Card
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // FilenameLabel
+            // 
+            this.FilenameLabel.AutoSize = true;
+            this.FilenameLabel.Location = new System.Drawing.Point(148, 35);
+            this.FilenameLabel.Name = "FilenameLabel";
+            this.FilenameLabel.Size = new System.Drawing.Size(35, 13);
+            this.FilenameLabel.TabIndex = 7;
+            this.FilenameLabel.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 497);
+            this.Controls.Add(this.FilenameLabel);
             this.Controls.Add(this.previousButton);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.importButton);
@@ -139,6 +150,7 @@ namespace Assessment_3_Flash_Card
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Button previousButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label FilenameLabel;
     }
 }
 

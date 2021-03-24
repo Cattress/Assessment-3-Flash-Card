@@ -16,7 +16,6 @@ namespace Assessment_3_Flash_Card
         public Form1()
         {
             InitializeComponent();
-
         }
 
         
@@ -31,24 +30,25 @@ namespace Assessment_3_Flash_Card
 
         private void flipCardButton_Click(object sender, EventArgs e)
         {
-          //  if (Deck[])
+         /*   if (Deck[cardIndex].isFlipped = "false")
+            {
+                // change text to desc
+            }*/
+           
         }
-
-        Deck[] decks;
-        decks = new Deck[2]; // change this later to num of stuff
+   
 
         private void importButton_Click(object sender, EventArgs e, string FileName, string FileReader)
         {
             int count = 0;
             
-            while (( FileName= FileReader.Read()) != null)
+            while (( FileName= FileReader.Read()) != null) //getting the information in the file
             {
-               // string[] cells = FileName.Split(",");
+                string[] cells = FileName.Split(","); //organising the data
                 string title = cells[0];
                 string definition = cells[1];
                 
-
-                decks[count] = new Deck( title, definition);
+                Deck[count] = new Deck( title, definition);
 
                 count++;
 

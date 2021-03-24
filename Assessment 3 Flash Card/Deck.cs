@@ -8,24 +8,27 @@ namespace Assessment_3_Flash_Card
 {
     class Deck
     {
-        private int cardIndex;
+        public int cardIndex;
+        public int deckIndex;
         private string title;
         private string description;
-        //private NewDeck[] = new Card[DeckCount];
-      
+        private Card[] DeckCards;
+        private 
+
         public Deck(string title, string description)
         {
             this.title = title;
             this.description = description;
-       }
-
-        public void Browse(string FileName)
-        {
-           
         }
-        */
-       
 
+        public int GetDeckIndex()
+        {
+            for (int i = 0; i < DeckCards[1].get; i++}
+            {
+                 deckIndex++
+            }
+
+      
 
     }
 }
