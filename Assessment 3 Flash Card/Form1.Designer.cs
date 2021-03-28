@@ -68,7 +68,6 @@ namespace Assessment_3_Flash_Card
             this.cardLabel.Size = new System.Drawing.Size(35, 13);
             this.cardLabel.TabIndex = 2;
             this.cardLabel.Text = "label1";
-            this.cardLabel.Click += new System.EventHandler(this.cardLabel_Click);
             // 
             // shuffleButton
             // 
@@ -78,6 +77,7 @@ namespace Assessment_3_Flash_Card
             this.shuffleButton.TabIndex = 3;
             this.shuffleButton.Text = "shuffle";
             this.shuffleButton.UseVisualStyleBackColor = true;
+            this.shuffleButton.Click += new System.EventHandler(this.shuffleButton_Click);
             // 
             // importButton
             // 
@@ -96,6 +96,7 @@ namespace Assessment_3_Flash_Card
             this.nextButton.TabIndex = 5;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // previousButton
             // 
@@ -105,6 +106,7 @@ namespace Assessment_3_Flash_Card
             this.previousButton.TabIndex = 6;
             this.previousButton.Text = "Previous";
             this.previousButton.UseVisualStyleBackColor = true;
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
             // openFileDialog1
             // 

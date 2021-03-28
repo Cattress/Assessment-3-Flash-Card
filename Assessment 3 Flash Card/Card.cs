@@ -17,14 +17,19 @@ namespace Assessment_3_Flash_Card
         {
             this.cardTitle = cardTitle;
             this.cardDefinition = cardDefinition;
+            flipped = false;
         }
 
         public string GetDefinition()
         {
             return cardDefinition;
         }
+        public string GetTitle()
+        {
+            return cardTitle;
+        }
 
-        public string ReadCard()
+        public string ReadCard() //gets the card's definition/text if it is flipped
         {
             if(flipped ==true )
             {
@@ -41,7 +46,17 @@ namespace Assessment_3_Flash_Card
             return flipped;
         }
 
-        
+        public void FLipCard() // resets the card to flipped like normal
+        {
+            if (flipped == false)
+            {
+                flipped = true;
+            }
+            else
+            {
+                flipped = false;
+            }
+        }
 
     }
 }
